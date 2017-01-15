@@ -1,0 +1,75 @@
+﻿body {
+    background-color:wheat;
+}
+#wrap { 
+	width: 1024px; 
+	margin: 0 auto; 
+    height:100%;
+}
+.wrap { 
+	width: 1024px; 
+	margin: 0 auto; 
+    height:100%;
+}
+#map-canvas {
+        width: 500px;
+        height: 400px;
+            background-color: #CCC;
+      }
+
+#Content
+{
+ width: 1024px; margin: auto;  background-color:wheat;
+}
+#leftSide { width: 192px; float: left; }
+#mainContent2 { width: 600px; float: left;   }
+#rightSide { width: 192px; float:right; }
+
+#footer {
+            text-align:center;
+            background-color: #333;
+            width: 1024px; 
+           position:fixed;
+            bottom:0;
+            color:white;
+            height:20px;
+        }
+ 
+ #HeaderTable {
+    background-color:white;
+    border:1px groove ;
+    height:100px; 
+    width:100%;
+}
+
+.menu ul {
+     margin: 0px;
+     padding: 4px 4px 0px 0px;
+     
+    
+}
+.menu li {
+     text-align:center;
+   
+    width:100px;
+    border:2px solid white;    
+    margin-bottom: 7px;
+    background-color :#33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    display: inline;
+}
+
+.menu ul li {
+    display: table-cell;
+    
+}
+
+.menu li:hover {
+    background-color: #0099cc;
+}
+
+.menu a:link {
+    
+    text-decoration: none;
+}

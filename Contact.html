@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Page</title>
+    <link href="styles/Home.css" rel="stylesheet" />
+  
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+    function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+            center: new google.maps.LatLng(43.7951474, -79.3496186),
+            zoom: 17,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+
+        });
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);
+    </script> 
+
+    
+    </head>
+    <body onload="getLocation();">
+        <div id="wrap">
+            <div id="header">
+
+                <table id="HeaderTable">
+                    <tr>
+                        <td>
+
+                           <img alt="img"  src="images/PlayLearn.jpg" height="100" width="200" />
+                        </td>
+                        <td>
+
+                           <img alt="img"  src="images/AllAbout.png" />
+
+                        </td>
+                        <td>
+                           <img alt="img"  src="images/children2.jpg" width="200" height="100" />
+                        </td>
+
+                    </tr>
+
+                </table>
+                <div class="menu">
+
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="science.html">Science</a></li>
+                            <li><a href="Math.html">Math</a></li>
+                            <li><a href="English.html">English</a></li>
+                            <li><a href="Crafts.html">Crafts</a></li>
+                            <li><a href="Activity.html">Activity</a></li>
+                            <li><a href="FAQ.html">FAQ</a></li>
+                            <li><a href="Contact.html">Contact US</a></li>
+                            <li><a href="honesty.html">Honesty</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+
+
+            </div>
+
+            <div id="content">
+              
+                <table >
+                    <tr>
+                        <td>
+                            <h3><b>Where are we located?</b></h3>
+                            <div id="map-canvas" ></div>
+
+
+                            <h4>We are conveniently located at 1750 Finch Ave E, Toronto, ON M2J 2X5 </h4>
+
+                        </td>
+
+                    </tr>
+                </table>
+                <h3>
+                    <b>Contact Address:</b>
+                   Tamanna Sultana<br />
+                    1750 Finch Ave E<br />
+                    Toronto, ON M2J 2X5<br />
+                    Phone no:(416) 491-5050<br />
+                    Email : <a href="mailto:tsultana2@myseneca.ca?subject=Site%20related&amp;body=Dear%20Webmaster" >Contact by Email</a>
+                </h3>
+
+
+
+
+
+ 
+</div><br />
+
+
+
+
+                <div id="footer">
+                    <script type="text/javascript">
+                        var dt = new Date(document.lastModified);
+                        document.write('© 2015 Tamanna Sultana, Seneca INT222. This page was last updated on ' + dt.toLocaleString())
+                    </script>
+                </div>
+            
+        </div>
+</body>
+</html>
